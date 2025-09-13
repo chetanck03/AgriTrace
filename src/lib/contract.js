@@ -18,6 +18,24 @@ export const contractABI = [
   {
     "inputs": [
       {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "internalType": "enum AgriProduceTrace.Role",
+        "name": "newRole",
+        "type": "uint8"
+      }
+    ],
+    "name": "changeUserRole",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
         "internalType": "string",
         "name": "name",
         "type": "string"

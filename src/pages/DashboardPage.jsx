@@ -6,6 +6,7 @@ import { Package, Plus, Search, Users, BarChart3, Truck } from 'lucide-react'
 import Card from '../components/ui/Card'
 import Button from '../components/ui/Button'
 import WalletConnect from '../components/ui/WalletConnect'
+import UserRegistration from '../components/ui/UserRegistration'
 
 const DashboardPage = () => {
   const { isConnected, userRole, myProduceItems, address } = useWeb3()
@@ -71,13 +72,7 @@ const DashboardPage = () => {
         )
       
       default:
-        return (
-          <Card>
-            <Card.Content>
-              <p className="text-gray-600">Please register your role to access dashboard features.</p>
-            </Card.Content>
-          </Card>
-        )
+        return <UserRegistration />
     }
   }
 
